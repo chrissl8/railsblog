@@ -1,0 +1,25 @@
+<div id="app-container">
+<h1>RailsBlog Posts</h1>
+<%= link_to 'New Article', new_article_path %>
+<br><br>
+<table>
+  <tr>
+    <td>ID</td>
+    <td>Title</td>
+    <td>Text</td>
+  </tr>
+  
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.id %></td>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= link_to 'View', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Delete', article_path(article),
+                                method: :delete,
+                                data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+</div>

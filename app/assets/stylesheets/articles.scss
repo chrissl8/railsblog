@@ -1,0 +1,143 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  font-family: 'Signika', sans-serif;
+  background-image: url('https://i.imgur.com/kYFnf8S.jpg');
+  text-shadow: 0px 0px 0.1px black;
+}
+
+a {
+  border: 1px solid #CC0066;
+  text-decoration: none;
+  background-color: #CC0066;
+  color: white;
+  padding: 1px 4px 1px 4px;
+  box-shadow: 2px 2px 5px #CC0066;
+}
+
+input[type="submit"] {
+  border: 1px solid #CC0066;
+  text-decoration: none;
+  background-color: #CC0066;
+  color: white;
+  padding: 1px 4px 1px 4px;
+  box-shadow: 2px 2px 5px #CC0066;
+  font-size: 1em;
+}
+
+input {
+  width: 50%;
+  border: 0px solid;
+  padding: 8px;
+}
+
+textarea {
+  resize: none;
+  width: 70%;
+  height: 5em;
+  border: 0px solid;
+  padding: 8px;
+}
+
+.home {
+  background-color: #00FFCC;
+  box-shadow: 6px 6px 10px white;
+  padding: 1em 0px 1em 0px;
+  margin: 6em 30% 0px 30%;
+  text-align: center;
+}
+
+.article {
+  background-color: #00FFCC;
+  box-shadow: 6px 6px 10px white;
+  padding: 1px 0px 1px 0px;
+  margin: 2em 5% 2em 5%;
+  word-wrap: break-word;
+}
+
+.article-form {
+  border: 1px solid #66CCFF;
+  margin: 2em 20% 1em 20%;
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  background-color: #66CCFF;
+  box-shadow: 0px 0px 12px #66CCFF;
+  word-wrap: break-word;
+}
+
+#app-container {
+  border: 1px solid #66CCFF;
+  margin: 2em 20% 1em 20%;
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  background-color: #66CCFF;
+  box-shadow: 0px 0px 12px #66CCFF;
+  word-wrap: break-word;
+}
+
+.blog-post {
+  border: 1px solid #66CCFF;
+  margin: 2em 20% 1em 20%;
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  background-color: #66CCFF;
+  box-shadow: 0px 0px 12px #66CCFF;
+  word-wrap: break-word;
+}
+
+.comments-box {
+  border: 1px solid #66CCFF;
+  margin: 2em 20% 1em 20%;
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  background-color: #66CCFF;
+  box-shadow: 0px 0px 12px #66CCFF;
+  word-wrap: break-word;
+}
+
+.navigation {
+  border: 1px solid #66CCFF;
+  margin: 2em 20% 1em 20%;
+  padding: 1em 1em 1em 1em;
+  text-align: center;
+  background-color: #66CCFF;
+  box-shadow: 0px 0px 12px #66CCFF;
+  word-wrap: break-word;
+}
+
+@media only screen  
+and (max-device-width : 375px) 
+and (orientation : portrait) {
+
+.home {
+  margin: 6em 5% 0px 5%;
+}
+
+#app-container {
+  margin: 2em 0% 1em 0%;
+}
+
+.article {
+  margin: 2em 2% 2em 2%;
+}
+
+.article-form {
+  margin: 2em 2% 1em 2%;
+}
+
+.blog-post {
+  margin: 2em 2% 1em 2%;
+}
+
+.comments-box {
+  margin: 2em 2% 1em 2%;
+}
+
+.navigation {
+  margin: 2em 2% 1em 2%;
+}
+
+  
+}

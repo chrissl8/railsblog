@@ -1,0 +1,17 @@
+<div id="app-container">
+<h1>RailsBlog Posts</h1>
+<%= link_to 'New Article', new_article_path %>
+<br><br>
+  
+  <% @articles.reverse_each do |article| %>
+    <div class="article">
+      <p>Post #<%= article.id %> by <strong><%= article.title %></strong></p> 
+      <p><%= article.text %></p>
+      <p><%= link_to 'View', article_path(article) %> 
+      <%= link_to 'Edit', edit_article_path(article) %> 
+      <%= link_to 'Delete', article_path(article),
+                                method: :delete,
+                                data: { confirm: 'Are you sure?' } %></p>
+    </div>
+  <% end %>
+</div>
